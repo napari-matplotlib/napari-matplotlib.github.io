@@ -47,7 +47,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Guide" href="guide/index.html" />
+    <link rel="next" title="User guide" href="user_guide.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="None"/>
   </head>
@@ -130,8 +130,15 @@
   <ul class="bd-navbar-elements navbar-nav">
     
                     <li class="nav-item">
-                      <a class="nav-link nav-internal" href="guide/index.html">
-                        Guide
+                      <a class="nav-link nav-internal" href="user_guide.html">
+                        User guide
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="third_party.html">
+                        Third-party plugins
                       </a>
                     </li>
                 
@@ -243,8 +250,15 @@ document.write(`
   <ul class="bd-navbar-elements navbar-nav">
     
                     <li class="nav-item">
-                      <a class="nav-link nav-internal" href="guide/index.html">
-                        Guide
+                      <a class="nav-link nav-internal" href="user_guide.html">
+                        User guide
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="third_party.html">
+                        Third-party plugins
                       </a>
                     </li>
                 
@@ -327,27 +341,15 @@ document.write(`
                   
   <section id="napari-matplotlib">
 <h1>napari-matplotlib<a class="headerlink" href="#napari-matplotlib" title="Permalink to this headline">#</a></h1>
-<p><code class="docutils literal notranslate"><span class="pre">napari-matplotlib</span></code> is a <a class="reference external" href="https://napari.org">Napari</a> plugin for generating
+<p>A <a class="reference external" href="https://napari.org">napari</a> plugin for generating
 <a class="reference external" href="https://matplotlib.org/">Matplotlib</a> plots from one or more <code class="docutils literal notranslate"><span class="pre">napari</span></code> Layers.</p>
-<section id="design">
-<h2>Design<a class="headerlink" href="#design" title="Permalink to this headline">#</a></h2>
-<p><code class="docutils literal notranslate"><span class="pre">napari-matplotlib</span></code> contains a number of different <code class="docutils literal notranslate"><span class="pre">napari</span></code> Widgets. Each
-widget is designed to map one or more <code class="docutils literal notranslate"><span class="pre">napari</span></code> Layers on to a <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> plot.
+<p>This plugin provides a number of different <code class="docutils literal notranslate"><span class="pre">napari</span></code> Widgets. Each
+widget is designed to map one or more <code class="docutils literal notranslate"><span class="pre">napari</span></code> Layers on to a <code class="docutils literal notranslate"><span class="pre">Matplotlib</span></code> plot.
 As an example, the <a class="reference internal" href="api/napari_matplotlib.HistogramWidget.html#napari_matplotlib.HistogramWidget" title="napari_matplotlib.HistogramWidget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HistogramWidget</span></code></a> is used to
 map one or more Image layers on to a 1D histogram plot.</p>
+<img alt="Screenshot of the napari viewer showing the napari-matplotlib histogram widget on the right hand side of the screen." src="_images/hist.png" />
 <div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="guide/index.html">Guide</a></li>
-</ul>
 </div>
-<div class="toctree-wrapper compound">
-<p aria-level="2" class="caption" role="heading"><span class="caption-text">Reference</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="api.html">API reference</a></li>
-<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
-</ul>
-</div>
-</section>
 </section>
 
 
@@ -362,11 +364,11 @@ map one or more Image layers on to a 1D histogram plot.</p>
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="right-next"
-       href="guide/index.html"
+       href="user_guide.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Guide</p>
+        <p class="prev-next-title">User guide</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -381,18 +383,6 @@ map one or more Image layers on to a 1D histogram plot.</p>
             
               
                 <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> On this page
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#design">Design</a><ul class="nav section-nav flex-column">
-</ul>
-</li>
-</ul>
-  </nav></div>
 
   <div class="sidebar-secondary-item">
   <div class="tocsection sourcelink">
