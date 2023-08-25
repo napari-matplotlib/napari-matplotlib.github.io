@@ -344,6 +344,7 @@ document.write(`
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="napari_matplotlib.FeaturesHistogramWidget.html">FeaturesHistogramWidget</a></li>
 <li class="toctree-l1"><a class="reference internal" href="napari_matplotlib.FeaturesScatterWidget.html">FeaturesScatterWidget</a></li>
 <li class="toctree-l1"><a class="reference internal" href="napari_matplotlib.HistogramWidget.html">HistogramWidget</a></li>
 <li class="toctree-l1"><a class="reference internal" href="napari_matplotlib.ScatterBaseWidget.html">ScatterBaseWidget</a></li>
@@ -425,11 +426,11 @@ document.write(`
 <col style="width: 90%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#napari_matplotlib.SliceWidget.current_dim" title="napari_matplotlib.SliceWidget.current_dim"><code class="xref py py-obj docutils literal notranslate"><span class="pre">current_dim</span></code></a></p></td>
-<td><p>Currently selected slice dimension.</p></td>
-</tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#napari_matplotlib.SliceWidget.current_dim_index" title="napari_matplotlib.SliceWidget.current_dim_index"><code class="xref py py-obj docutils literal notranslate"><span class="pre">current_dim_index</span></code></a></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#napari_matplotlib.SliceWidget.current_dim_index" title="napari_matplotlib.SliceWidget.current_dim_index"><code class="xref py py-obj docutils literal notranslate"><span class="pre">current_dim_index</span></code></a></p></td>
 <td><p>Currently selected slice dimension index.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#napari_matplotlib.SliceWidget.current_dim_name" title="napari_matplotlib.SliceWidget.current_dim_name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">current_dim_name</span></code></a></p></td>
+<td><p>Currently selected slice dimension.</p></td>
 </tr>
 <tr class="row-odd"><td><p><a class="reference internal" href="#napari_matplotlib.SliceWidget.input_layer_types" title="napari_matplotlib.SliceWidget.input_layer_types"><code class="xref py py-obj docutils literal notranslate"><span class="pre">input_layer_types</span></code></a></p></td>
 <td><p>Type of layer taken as input</p></td>
@@ -449,19 +450,22 @@ document.write(`
 <tr class="row-odd"><td><p><a class="reference internal" href="#napari_matplotlib.SliceWidget.draw" title="napari_matplotlib.SliceWidget.draw"><code class="xref py py-obj docutils literal notranslate"><span class="pre">draw</span></code></a>()</p></td>
 <td><p>Clear axes and draw a 1D plot.</p></td>
 </tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#napari_matplotlib.SliceWidget.on_update_layers" title="napari_matplotlib.SliceWidget.on_update_layers"><code class="xref py py-obj docutils literal notranslate"><span class="pre">on_update_layers</span></code></a>()</p></td>
+<td><p>Called when layer selection is updated.</p></td>
+</tr>
 </tbody>
 </table>
 <p class="rubric">Attributes Documentation</p>
 <dl class="py attribute">
-<dt class="sig sig-object py" id="napari_matplotlib.SliceWidget.current_dim">
-<span class="sig-name descname"><span class="pre">current_dim</span></span><a class="headerlink" href="#napari_matplotlib.SliceWidget.current_dim" title="Permalink to this definition">#</a></dt>
-<dd><p>Currently selected slice dimension.</p>
-</dd></dl>
-
-<dl class="py attribute">
 <dt class="sig sig-object py" id="napari_matplotlib.SliceWidget.current_dim_index">
 <span class="sig-name descname"><span class="pre">current_dim_index</span></span><a class="headerlink" href="#napari_matplotlib.SliceWidget.current_dim_index" title="Permalink to this definition">#</a></dt>
 <dd><p>Currently selected slice dimension index.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="napari_matplotlib.SliceWidget.current_dim_name">
+<span class="sig-name descname"><span class="pre">current_dim_name</span></span><a class="headerlink" href="#napari_matplotlib.SliceWidget.current_dim_name" title="Permalink to this definition">#</a></dt>
+<dd><p>Currently selected slice dimension.</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -481,6 +485,12 @@ document.write(`
 <dt class="sig sig-object py" id="napari_matplotlib.SliceWidget.draw">
 <span class="sig-name descname"><span class="pre">draw</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#napari_matplotlib.SliceWidget.draw" title="Permalink to this definition">#</a></dt>
 <dd><p>Clear axes and draw a 1D plot.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="napari_matplotlib.SliceWidget.on_update_layers">
+<span class="sig-name descname"><span class="pre">on_update_layers</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#napari_matplotlib.SliceWidget.on_update_layers" title="Permalink to this definition">#</a></dt>
+<dd><p>Called when layer selection is updated.</p>
 </dd></dl>
 
 </dd></dl>

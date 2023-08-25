@@ -1,33 +1,31 @@
-SliceWidget
-===========
+FeaturesHistogramWidget
+=======================
 
 .. currentmodule:: napari_matplotlib
 
-.. autoclass:: SliceWidget
+.. autoclass:: FeaturesHistogramWidget
    :show-inheritance:
 
    .. rubric:: Attributes Summary
 
    .. autosummary::
 
-      ~SliceWidget.current_dim_index
-      ~SliceWidget.current_dim_name
-      ~SliceWidget.input_layer_types
-      ~SliceWidget.n_layers_input
+      ~FeaturesHistogramWidget.input_layer_types
+      ~FeaturesHistogramWidget.n_layers_input
+      ~FeaturesHistogramWidget.x_axis_key
 
    .. rubric:: Methods Summary
 
    .. autosummary::
 
-      ~SliceWidget.draw
-      ~SliceWidget.on_update_layers
+      ~FeaturesHistogramWidget.draw
+      ~FeaturesHistogramWidget.on_update_layers
 
    .. rubric:: Attributes Documentation
 
-   .. autoattribute:: current_dim_index
-   .. autoattribute:: current_dim_name
    .. autoattribute:: input_layer_types
    .. autoattribute:: n_layers_input
+   .. autoattribute:: x_axis_key
 
    .. rubric:: Methods Documentation
 

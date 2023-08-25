@@ -47,7 +47,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'api';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="FeaturesScatterWidget" href="api/napari_matplotlib.FeaturesScatterWidget.html" />
+    <link rel="next" title="FeaturesHistogramWidget" href="api/napari_matplotlib.FeaturesHistogramWidget.html" />
     <link rel="prev" title="Third-party plugins" href="third_party.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="None"/>
@@ -344,6 +344,7 @@ document.write(`
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="api/napari_matplotlib.FeaturesHistogramWidget.html">FeaturesHistogramWidget</a></li>
 <li class="toctree-l1"><a class="reference internal" href="api/napari_matplotlib.FeaturesScatterWidget.html">FeaturesScatterWidget</a></li>
 <li class="toctree-l1"><a class="reference internal" href="api/napari_matplotlib.HistogramWidget.html">HistogramWidget</a></li>
 <li class="toctree-l1"><a class="reference internal" href="api/napari_matplotlib.ScatterBaseWidget.html">ScatterBaseWidget</a></li>
@@ -423,19 +424,22 @@ plots though the napari user interface.</p>
 <col style="width: 90%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="api/napari_matplotlib.FeaturesScatterWidget.html#napari_matplotlib.FeaturesScatterWidget" title="napari_matplotlib.FeaturesScatterWidget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FeaturesScatterWidget</span></code></a>(napari_viewer[, parent])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="api/napari_matplotlib.FeaturesHistogramWidget.html#napari_matplotlib.FeaturesHistogramWidget" title="napari_matplotlib.FeaturesHistogramWidget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FeaturesHistogramWidget</span></code></a>(napari_viewer[, parent])</p></td>
+<td><p>Display a histogram of selected feature attached to selected layer.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="api/napari_matplotlib.FeaturesScatterWidget.html#napari_matplotlib.FeaturesScatterWidget" title="napari_matplotlib.FeaturesScatterWidget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FeaturesScatterWidget</span></code></a>(napari_viewer[, parent])</p></td>
 <td><p>Widget to scatter data stored in two layer feature attributes.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="api/napari_matplotlib.HistogramWidget.html#napari_matplotlib.HistogramWidget" title="napari_matplotlib.HistogramWidget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HistogramWidget</span></code></a>(napari_viewer[, parent])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="api/napari_matplotlib.HistogramWidget.html#napari_matplotlib.HistogramWidget" title="napari_matplotlib.HistogramWidget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">HistogramWidget</span></code></a>(napari_viewer[, parent])</p></td>
 <td><p>Display a histogram of the currently selected layer.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="api/napari_matplotlib.ScatterBaseWidget.html#napari_matplotlib.ScatterBaseWidget" title="napari_matplotlib.ScatterBaseWidget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ScatterBaseWidget</span></code></a>(napari_viewer[, parent])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="api/napari_matplotlib.ScatterBaseWidget.html#napari_matplotlib.ScatterBaseWidget" title="napari_matplotlib.ScatterBaseWidget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ScatterBaseWidget</span></code></a>(napari_viewer[, parent])</p></td>
 <td><p>Base class for widgets that scatter two datasets against each other.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="api/napari_matplotlib.ScatterWidget.html#napari_matplotlib.ScatterWidget" title="napari_matplotlib.ScatterWidget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ScatterWidget</span></code></a>(napari_viewer[, parent])</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="api/napari_matplotlib.ScatterWidget.html#napari_matplotlib.ScatterWidget" title="napari_matplotlib.ScatterWidget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ScatterWidget</span></code></a>(napari_viewer[, parent])</p></td>
 <td><p>Scatter data in two similarly shaped layers.</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="api/napari_matplotlib.SliceWidget.html#napari_matplotlib.SliceWidget" title="napari_matplotlib.SliceWidget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SliceWidget</span></code></a>(napari_viewer[, parent])</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="api/napari_matplotlib.SliceWidget.html#napari_matplotlib.SliceWidget" title="napari_matplotlib.SliceWidget"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SliceWidget</span></code></a>(napari_viewer[, parent])</p></td>
 <td><p>Plot a 1D slice along a given dimension.</p></td>
 </tr>
 </tbody>
@@ -443,16 +447,17 @@ plots though the napari user interface.</p>
 </section>
 <section id="class-inheritance-diagram">
 <h3>Class Inheritance Diagram<a class="headerlink" href="#class-inheritance-diagram" title="Permalink to this headline">#</a></h3>
-<div class="graphviz"><img src="_images/inheritance-750f96349ce13fdda5d45219e3a78d33ac61bb4d.png" alt="Inheritance diagram of napari_matplotlib.scatter.FeaturesScatterWidget, napari_matplotlib.histogram.HistogramWidget, napari_matplotlib.scatter.ScatterBaseWidget, napari_matplotlib.scatter.ScatterWidget, napari_matplotlib.slice.SliceWidget" usemap="#inheritancef6934b37ac" class="inheritance graphviz" /></div>
-<map id="inheritancef6934b37ac" name="inheritancef6934b37ac">
-<area shape="rect" id="node1" href="api/napari_matplotlib.base.BaseNapariMPLWidget.html#napari_matplotlib.base.BaseNapariMPLWidget" target="_top" title="Widget containing Matplotlib canvas and toolbar themed to match napari." alt="" coords="254,299,423,324"/>
-<area shape="rect" id="node7" href="api/napari_matplotlib.base.NapariMPLWidget.html#napari_matplotlib.base.NapariMPLWidget" target="_top" title="Widget containing a Matplotlib canvas and toolbar." alt="" coords="270,372,407,397"/>
-<area shape="rect" id="node3" href="api/napari_matplotlib.FeaturesScatterWidget.html#napari_matplotlib.FeaturesScatterWidget" target="_top" title="Widget to scatter data stored in two layer feature attributes." alt="" coords="5,592,176,617"/>
-<area shape="rect" id="node4" href="api/napari_matplotlib.ScatterBaseWidget.html#napari_matplotlib.ScatterBaseWidget" target="_top" title="Base class for widgets that scatter two datasets against each other." alt="" coords="100,519,247,544"/>
-<area shape="rect" id="node12" href="api/napari_matplotlib.ScatterWidget.html#napari_matplotlib.ScatterWidget" target="_top" title="Scatter data in two similarly shaped layers." alt="" coords="200,592,315,617"/>
-<area shape="rect" id="node5" href="api/napari_matplotlib.HistogramWidget.html#napari_matplotlib.HistogramWidget" target="_top" title="Display a histogram of the currently selected layer." alt="" coords="271,519,407,544"/>
-<area shape="rect" id="node6" href="api/napari_matplotlib.base.SingleAxesWidget.html#napari_matplotlib.base.SingleAxesWidget" target="_top" title="In addition to `NapariMPLWidget`, this sets up a single axes and" alt="" coords="269,445,408,471"/>
-<area shape="rect" id="node13" href="api/napari_matplotlib.SliceWidget.html#napari_matplotlib.SliceWidget" target="_top" title="Plot a 1D slice along a given dimension." alt="" coords="431,519,529,544"/>
+<div class="graphviz"><img src="_images/inheritance-7e9d487398ae1759fe5560ddf296f03c90b20db0.png" alt="Inheritance diagram of napari_matplotlib.histogram.FeaturesHistogramWidget, napari_matplotlib.scatter.FeaturesScatterWidget, napari_matplotlib.histogram.HistogramWidget, napari_matplotlib.scatter.ScatterBaseWidget, napari_matplotlib.scatter.ScatterWidget, napari_matplotlib.slice.SliceWidget" usemap="#inheritance239971e5c6" class="inheritance graphviz" /></div>
+<map id="inheritance239971e5c6" name="inheritance239971e5c6">
+<area shape="rect" id="node1" href="api/napari_matplotlib.base.BaseNapariMPLWidget.html#napari_matplotlib.base.BaseNapariMPLWidget" target="_top" title="Widget containing Matplotlib canvas and toolbar themed to match napari." alt="" coords="293,299,462,324"/>
+<area shape="rect" id="node8" href="api/napari_matplotlib.base.NapariMPLWidget.html#napari_matplotlib.base.NapariMPLWidget" target="_top" title="Widget containing a Matplotlib canvas and toolbar." alt="" coords="309,372,446,397"/>
+<area shape="rect" id="node3" href="api/napari_matplotlib.FeaturesHistogramWidget.html#napari_matplotlib.FeaturesHistogramWidget" target="_top" title="Display a histogram of selected feature attached to selected layer." alt="" coords="5,519,197,544"/>
+<area shape="rect" id="node4" href="api/napari_matplotlib.base.SingleAxesWidget.html#napari_matplotlib.base.SingleAxesWidget" target="_top" title="In addition to `NapariMPLWidget`, this sets up a single axes and" alt="" coords="308,445,447,471"/>
+<area shape="rect" id="node6" href="api/napari_matplotlib.ScatterBaseWidget.html#napari_matplotlib.ScatterBaseWidget" target="_top" title="Base class for widgets that scatter two datasets against each other." alt="" coords="221,519,368,544"/>
+<area shape="rect" id="node7" href="api/napari_matplotlib.HistogramWidget.html#napari_matplotlib.HistogramWidget" target="_top" title="Display a histogram of the currently selected layer." alt="" coords="392,519,528,544"/>
+<area shape="rect" id="node14" href="api/napari_matplotlib.SliceWidget.html#napari_matplotlib.SliceWidget" target="_top" title="Plot a 1D slice along a given dimension." alt="" coords="552,519,651,544"/>
+<area shape="rect" id="node5" href="api/napari_matplotlib.FeaturesScatterWidget.html#napari_matplotlib.FeaturesScatterWidget" target="_top" title="Widget to scatter data stored in two layer feature attributes." alt="" coords="125,592,296,617"/>
+<area shape="rect" id="node13" href="api/napari_matplotlib.ScatterWidget.html#napari_matplotlib.ScatterWidget" target="_top" title="Scatter data in two similarly shaped layers." alt="" coords="320,592,435,617"/>
 </map></section>
 </section>
 <section id="module-napari_matplotlib.base">
@@ -509,11 +514,11 @@ plots though the napari user interface.</p>
       </div>
     </a>
     <a class="right-next"
-       href="api/napari_matplotlib.FeaturesScatterWidget.html"
+       href="api/napari_matplotlib.FeaturesHistogramWidget.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">FeaturesScatterWidget</p>
+        <p class="prev-next-title">FeaturesHistogramWidget</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>

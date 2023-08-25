@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>1D slices &#8212; napari-matplotlib  documentation</title>
+    <title>FeaturesHistogramWidget &#8212; napari-matplotlib  documentation</title>
   
   
   
@@ -44,11 +44,11 @@
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'auto_examples/slice';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'api/napari_matplotlib.FeaturesHistogramWidget';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Histograms" href="histogram.html" />
-    <link rel="prev" title="Scatter plots" href="scatter.html" />
+    <link rel="next" title="FeaturesScatterWidget" href="napari_matplotlib.FeaturesScatterWidget.html" />
+    <link rel="prev" title="API reference" href="../api.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="None"/>
   </head>
@@ -145,8 +145,8 @@
                     </li>
                 
 
-                    <li class="nav-item current active">
-                      <a class="nav-link nav-internal" href="index.html">
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../auto_examples/index.html">
                         Gallery
                       </a>
                     </li>
@@ -159,7 +159,7 @@
                     </li>
                 
 
-                    <li class="nav-item">
+                    <li class="nav-item current active">
                       <a class="nav-link nav-internal" href="../api.html">
                         API reference
                       </a>
@@ -272,8 +272,8 @@ document.write(`
                     </li>
                 
 
-                    <li class="nav-item current active">
-                      <a class="nav-link nav-internal" href="index.html">
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../auto_examples/index.html">
                         Gallery
                       </a>
                     </li>
@@ -286,7 +286,7 @@ document.write(`
                     </li>
                 
 
-                    <li class="nav-item">
+                    <li class="nav-item current active">
                       <a class="nav-link nav-internal" href="../api.html">
                         API reference
                       </a>
@@ -344,10 +344,17 @@ document.write(`
      aria-label="Section Navigation">
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="scatter.html">Scatter plots</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">1D slices</a></li>
-<li class="toctree-l1"><a class="reference internal" href="histogram.html">Histograms</a></li>
-<li class="toctree-l1"><a class="reference internal" href="features_scatter.html">Scattering features</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">FeaturesHistogramWidget</a></li>
+<li class="toctree-l1"><a class="reference internal" href="napari_matplotlib.FeaturesScatterWidget.html">FeaturesScatterWidget</a></li>
+<li class="toctree-l1"><a class="reference internal" href="napari_matplotlib.HistogramWidget.html">HistogramWidget</a></li>
+<li class="toctree-l1"><a class="reference internal" href="napari_matplotlib.ScatterBaseWidget.html">ScatterBaseWidget</a></li>
+<li class="toctree-l1"><a class="reference internal" href="napari_matplotlib.ScatterWidget.html">ScatterWidget</a></li>
+<li class="toctree-l1"><a class="reference internal" href="napari_matplotlib.SliceWidget.html">SliceWidget</a></li>
+</ul>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="napari_matplotlib.base.BaseNapariMPLWidget.html">BaseNapariMPLWidget</a></li>
+<li class="toctree-l1"><a class="reference internal" href="napari_matplotlib.base.NapariMPLWidget.html">NapariMPLWidget</a></li>
+<li class="toctree-l1"><a class="reference internal" href="napari_matplotlib.base.SingleAxesWidget.html">SingleAxesWidget</a></li>
 </ul>
 </div>
 </nav></div>
@@ -386,9 +393,9 @@ document.write(`
       </a>
     </li>
     
-    <li class="breadcrumb-item"><a href="index.html" class="nav-link">Gallery</a></li>
+    <li class="breadcrumb-item"><a href="../api.html" class="nav-link">API reference</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page">1D slices</li>
+    <li class="breadcrumb-item active" aria-current="page">FeaturesHistogramWidget</li>
   </ul>
 </nav>
 </div>
@@ -405,36 +412,80 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <div class="sphx-glr-download-link-note admonition note">
-<p class="admonition-title">Note</p>
-<p><a class="reference internal" href="#sphx-glr-download-auto-examples-slice-py"><span class="std std-ref">Go to the end</span></a>
-to download the full example code</p>
-</div>
-<section class="sphx-glr-example-title" id="d-slices">
-<span id="sphx-glr-auto-examples-slice-py"></span><h1>1D slices<a class="headerlink" href="#d-slices" title="Permalink to this headline">#</a></h1>
-<img src="../_images/sphx_glr_slice_001.png" srcset="../_images/sphx_glr_slice_001.png" alt="slice" class = "sphx-glr-single-img"/><div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">napari</span>
+  <section id="featureshistogramwidget">
+<h1>FeaturesHistogramWidget<a class="headerlink" href="#featureshistogramwidget" title="Permalink to this headline">#</a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="napari_matplotlib.FeaturesHistogramWidget">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">napari_matplotlib.</span></span><span class="sig-name descname"><span class="pre">FeaturesHistogramWidget</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">napari_viewer</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference internal" href="https://napari.org/api/napari.Viewer.html#napari.Viewer" title="napari.Viewer"><code class="docutils literal notranslate"><span class="pre">napari.Viewer</span></code></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">parent</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><a class="reference external" href="https://docs.python.org/3/library/typing.html#typing.Optional" title="(in Python v3.11)"><span class="pre">Optional</span></a><span class="p"><span class="pre">[</span></span><span class="pre">PyQt5.QtWidgets.QWidget</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#napari_matplotlib.FeaturesHistogramWidget" title="Permalink to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference internal" href="napari_matplotlib.base.SingleAxesWidget.html#napari_matplotlib.base.SingleAxesWidget" title="napari_matplotlib.base.SingleAxesWidget"><code class="xref py py-class docutils literal notranslate"><span class="pre">napari_matplotlib.base.SingleAxesWidget</span></code></a></p>
+<p>Display a histogram of selected feature attached to selected layer.</p>
+<p class="rubric">Attributes Summary</p>
+<table class="autosummary longtable table autosummary">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#napari_matplotlib.FeaturesHistogramWidget.input_layer_types" title="napari_matplotlib.FeaturesHistogramWidget.input_layer_types"><code class="xref py py-obj docutils literal notranslate"><span class="pre">input_layer_types</span></code></a></p></td>
+<td><p>Type of layer taken as input</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#napari_matplotlib.FeaturesHistogramWidget.n_layers_input" title="napari_matplotlib.FeaturesHistogramWidget.n_layers_input"><code class="xref py py-obj docutils literal notranslate"><span class="pre">n_layers_input</span></code></a></p></td>
+<td><p>Number of layers taken as input</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#napari_matplotlib.FeaturesHistogramWidget.x_axis_key" title="napari_matplotlib.FeaturesHistogramWidget.x_axis_key"><code class="xref py py-obj docutils literal notranslate"><span class="pre">x_axis_key</span></code></a></p></td>
+<td><p>Key to access x axis data from the FeaturesTable</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Methods Summary</p>
+<table class="autosummary longtable table autosummary">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#napari_matplotlib.FeaturesHistogramWidget.draw" title="napari_matplotlib.FeaturesHistogramWidget.draw"><code class="xref py py-obj docutils literal notranslate"><span class="pre">draw</span></code></a>()</p></td>
+<td><p>Clear the axes and histogram the currently selected layer/slice.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#napari_matplotlib.FeaturesHistogramWidget.on_update_layers" title="napari_matplotlib.FeaturesHistogramWidget.on_update_layers"><code class="xref py py-obj docutils literal notranslate"><span class="pre">on_update_layers</span></code></a>()</p></td>
+<td><p>Called when the layer selection changes by <code class="docutils literal notranslate"><span class="pre">self.update_layers()</span></code>.</p></td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Attributes Documentation</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="napari_matplotlib.FeaturesHistogramWidget.input_layer_types">
+<span class="sig-name descname"><span class="pre">input_layer_types</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><a class="reference external" href="https://napari.org/api/napari.layers.Layer.html#napari.layers.Layer" title="(in napari vdev)"><span class="pre">napari.layers.Layer</span></a><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="p"><span class="pre">...</span></span><span class="p"><span class="pre">]</span></span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">(&lt;class</span> <span class="pre">'napari.layers.labels.labels.Labels'&gt;,</span> <span class="pre">&lt;class</span> <span class="pre">'napari.layers.points.points.Points'&gt;,</span> <span class="pre">&lt;class</span> <span class="pre">'napari.layers.shapes.shapes.Shapes'&gt;,</span> <span class="pre">&lt;class</span> <span class="pre">'napari.layers.tracks.tracks.Tracks'&gt;,</span> <span class="pre">&lt;class</span> <span class="pre">'napari.layers.vectors.vectors.Vectors'&gt;)</span></em><a class="headerlink" href="#napari_matplotlib.FeaturesHistogramWidget.input_layer_types" title="Permalink to this definition">#</a></dt>
+<dd><p>Type of layer taken as input</p>
+</dd></dl>
 
-<a href="https://napari.org/api/napari.Viewer.html#napari.Viewer" title="napari.Viewer" class="sphx-glr-backref-module-napari sphx-glr-backref-type-py-class sphx-glr-backref-instance"><span class="n">viewer</span></a> <span class="o">=</span> <a href="https://napari.org/api/napari.Viewer.html#napari.Viewer" title="napari.Viewer" class="sphx-glr-backref-module-napari sphx-glr-backref-type-py-class"><span class="n">napari</span><span class="o">.</span><span class="n">Viewer</span></a><span class="p">()</span>
-<a href="https://napari.org/api/napari.Viewer.html#napari.Viewer.open_sample" title="napari.Viewer.open_sample" class="sphx-glr-backref-module-napari sphx-glr-backref-type-py-method"><span class="n">viewer</span><span class="o">.</span><span class="n">open_sample</span></a><span class="p">(</span><span class="s2">&quot;napari&quot;</span><span class="p">,</span> <span class="s2">&quot;kidney&quot;</span><span class="p">)</span>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="napari_matplotlib.FeaturesHistogramWidget.n_layers_input">
+<span class="sig-name descname"><span class="pre">n_layers_input</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">Interval(1,</span> <span class="pre">1)</span></em><a class="headerlink" href="#napari_matplotlib.FeaturesHistogramWidget.n_layers_input" title="Permalink to this definition">#</a></dt>
+<dd><p>Number of layers taken as input</p>
+</dd></dl>
 
-<a href="https://napari.org/api/napari.components.ViewerModel.html#napari.components.ViewerModel.window" title="napari.components.ViewerModel.window" class="sphx-glr-backref-module-napari-components sphx-glr-backref-type-py-attribute"><span class="n">viewer</span><span class="o">.</span><span class="n">window</span><span class="o">.</span><span class="n">add_plugin_dock_widget</span></a><span class="p">(</span>
-    <span class="n">plugin_name</span><span class="o">=</span><span class="s2">&quot;napari-matplotlib&quot;</span><span class="p">,</span> <span class="n">widget_name</span><span class="o">=</span><span class="s2">&quot;1D slice&quot;</span>
-<span class="p">)</span>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="napari_matplotlib.FeaturesHistogramWidget.x_axis_key">
+<span class="sig-name descname"><span class="pre">x_axis_key</span></span><a class="headerlink" href="#napari_matplotlib.FeaturesHistogramWidget.x_axis_key" title="Permalink to this definition">#</a></dt>
+<dd><p>Key to access x axis data from the FeaturesTable</p>
+</dd></dl>
 
-<span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
-    <a href="https://napari.org/api/napari.html#napari.run" title="napari.run" class="sphx-glr-backref-module-napari sphx-glr-backref-type-py-function"><span class="n">napari</span><span class="o">.</span><span class="n">run</span></a><span class="p">()</span>
-</pre></div>
-</div>
-<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> (0 minutes 1.149 seconds)</p>
-<div class="sphx-glr-footer sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-slice-py">
-<div class="sphx-glr-download sphx-glr-download-python docutils container">
-<p><a class="reference download internal" download="" href="../_downloads/bc541a354b7f92b48ffdb8727aa73e82/slice.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">slice.py</span></code></a></p>
-</div>
-<div class="sphx-glr-download sphx-glr-download-jupyter docutils container">
-<p><a class="reference download internal" download="" href="../_downloads/c26c34c6833b66e54ef0d268128ff00d/slice.ipynb"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Jupyter</span> <span class="pre">notebook:</span> <span class="pre">slice.ipynb</span></code></a></p>
-</div>
-</div>
-<p class="sphx-glr-signature"><a class="reference external" href="https://sphinx-gallery.github.io">Gallery generated by Sphinx-Gallery</a></p>
+<p class="rubric">Methods Documentation</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="napari_matplotlib.FeaturesHistogramWidget.draw">
+<span class="sig-name descname"><span class="pre">draw</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#napari_matplotlib.FeaturesHistogramWidget.draw" title="Permalink to this definition">#</a></dt>
+<dd><p>Clear the axes and histogram the currently selected layer/slice.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="napari_matplotlib.FeaturesHistogramWidget.on_update_layers">
+<span class="sig-name descname"><span class="pre">on_update_layers</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><span class="pre">None</span></a></span></span><a class="headerlink" href="#napari_matplotlib.FeaturesHistogramWidget.on_update_layers" title="Permalink to this definition">#</a></dt>
+<dd><p>Called when the layer selection changes by <code class="docutils literal notranslate"><span class="pre">self.update_layers()</span></code>.</p>
+</dd></dl>
+
+</dd></dl>
+
 </section>
 
 
@@ -449,20 +500,20 @@ to download the full example code</p>
     <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
-       href="scatter.html"
+       href="../api.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Scatter plots</p>
+        <p class="prev-next-title">API reference</p>
       </div>
     </a>
     <a class="right-next"
-       href="histogram.html"
+       href="napari_matplotlib.FeaturesScatterWidget.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Histograms</p>
+        <p class="prev-next-title">FeaturesScatterWidget</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -480,7 +531,7 @@ to download the full example code</p>
 
   <div class="sidebar-secondary-item">
   <div class="tocsection sourcelink">
-    <a href="../_sources/auto_examples/slice.rst.txt">
+    <a href="../_sources/api/napari_matplotlib.FeaturesHistogramWidget.rst.txt">
       <i class="fa-solid fa-file-lines"></i> Show Source
     </a>
   </div>
