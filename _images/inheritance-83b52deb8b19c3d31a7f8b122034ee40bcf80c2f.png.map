@@ -1,7 +1,7 @@
 <map id="inheritance239971e5c6" name="inheritance239971e5c6">
 <area shape="rect" id="node1" href="api/napari_matplotlib.base.BaseNapariMPLWidget.html#napari_matplotlib.base.BaseNapariMPLWidget" target="_top" title="Widget containing Matplotlib canvas and toolbar themed to match napari." alt="" coords="293,299,462,324"/>
 <area shape="rect" id="node8" href="api/napari_matplotlib.base.NapariMPLWidget.html#napari_matplotlib.base.NapariMPLWidget" target="_top" title="Widget containing a Matplotlib canvas and toolbar." alt="" coords="309,372,446,397"/>
-<area shape="rect" id="node2" title="QWidget(parent: typing.Optional[QWidget] = None, flags: Union[Qt.WindowFlags, Qt.WindowType] = Qt.WindowFlags())" alt="" coords="338,225,417,251"/>
+<area shape="rect" id="node2" title="QWidget(parent: Optional[QWidget] = None, flags: Union[Qt.WindowFlags, Qt.WindowType] = Qt.WindowFlags())" alt="" coords="338,225,417,251"/>
 <area shape="rect" id="node3" href="api/napari_matplotlib.FeaturesHistogramWidget.html#napari_matplotlib.FeaturesHistogramWidget" target="_top" title="Display a histogram of selected feature attached to selected layer." alt="" coords="5,519,197,544"/>
 <area shape="rect" id="node4" href="api/napari_matplotlib.base.SingleAxesWidget.html#napari_matplotlib.base.SingleAxesWidget" target="_top" title="In addition to `NapariMPLWidget`, this sets up a single axes and" alt="" coords="308,445,447,471"/>
 <area shape="rect" id="node6" href="api/napari_matplotlib.ScatterBaseWidget.html#napari_matplotlib.ScatterBaseWidget" target="_top" title="Base class for widgets that scatter two datasets against each other." alt="" coords="221,519,368,544"/>
@@ -9,6 +9,6 @@
 <area shape="rect" id="node14" href="api/napari_matplotlib.SliceWidget.html#napari_matplotlib.SliceWidget" target="_top" title="Plot a 1D slice along a given dimension." alt="" coords="552,519,651,544"/>
 <area shape="rect" id="node5" href="api/napari_matplotlib.FeaturesScatterWidget.html#napari_matplotlib.FeaturesScatterWidget" target="_top" title="Widget to scatter data stored in two layer feature attributes." alt="" coords="125,592,296,617"/>
 <area shape="rect" id="node13" href="api/napari_matplotlib.ScatterWidget.html#napari_matplotlib.ScatterWidget" target="_top" title="Scatter data in two similarly shaped layers." alt="" coords="320,592,435,617"/>
-<area shape="rect" id="node9" title="QObject(parent: typing.Optional[QObject] = None)" alt="" coords="283,152,357,177"/>
+<area shape="rect" id="node9" title="QObject(parent: Optional[QObject] = None)" alt="" coords="283,152,357,177"/>
 <area shape="rect" id="node11" title="QPaintDevice()" alt="" coords="381,152,491,177"/>
 </map>
