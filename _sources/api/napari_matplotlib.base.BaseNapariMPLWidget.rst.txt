@@ -11,7 +11,6 @@ BaseNapariMPLWidget
    .. autosummary::
 
       ~BaseNapariMPLWidget.figure
-      ~BaseNapariMPLWidget.mpl_style_sheet_path
 
    .. rubric:: Methods Summary
 
@@ -22,7 +21,6 @@ BaseNapariMPLWidget
    .. rubric:: Attributes Documentation
 
    .. autoattribute:: figure
-   .. autoattribute:: mpl_style_sheet_path
 
    .. rubric:: Methods Documentation
 

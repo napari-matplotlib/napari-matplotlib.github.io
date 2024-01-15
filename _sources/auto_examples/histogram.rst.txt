@@ -34,7 +34,7 @@ Histograms
 
 
 
-.. code-block:: default
+.. code-block:: Python
 
     import napari
 
@@ -51,7 +51,7 @@ Histograms
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 1.145 seconds)
+   **Total running time of the script:** (0 minutes 1.474 seconds)
 
 
 .. _sphx_glr_download_auto_examples_histogram.py:
@@ -60,16 +60,13 @@ Histograms
 
   .. container:: sphx-glr-footer sphx-glr-footer-example
 
+    .. container:: sphx-glr-download sphx-glr-download-jupyter
 
-
+      :download:`Download Jupyter notebook: histogram.ipynb <histogram.ipynb>`
 
     .. container:: sphx-glr-download sphx-glr-download-python
 
       :download:`Download Python source code: histogram.py <histogram.py>`
-
-    .. container:: sphx-glr-download sphx-glr-download-jupyter
-
-      :download:`Download Jupyter notebook: histogram.ipynb <histogram.ipynb>`
 
 
 .. only:: html

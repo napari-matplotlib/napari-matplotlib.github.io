@@ -18,6 +18,7 @@ HistogramWidget
    .. autosummary::
 
       ~HistogramWidget.draw
+      ~HistogramWidget.on_update_layers
 
    .. rubric:: Attributes Documentation
 
@@ -27,3 +28,4 @@ HistogramWidget
    .. rubric:: Methods Documentation
 
    .. automethod:: draw
+   .. automethod:: on_update_layers
