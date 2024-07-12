@@ -415,7 +415,17 @@ document.write(`
   <section id="changelog">
 <h1>Changelog<a class="headerlink" href="#changelog" title="Link to this heading">#</a></h1>
 <section id="id1">
-<h2>2.0.2<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<h2>2.0.3<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<section id="bug-fixes">
+<h3>Bug fixes<a class="headerlink" href="#bug-fixes" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Fix an error that happened when the histogram widget was open, but a layer that doesn’t support
+histogramming (e.g., a labels layer) was selected.</p></li>
+</ul>
+</section>
+</section>
+<section id="id2">
+<h2>2.0.2<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
 <section id="dependencies">
 <h3>Dependencies<a class="headerlink" href="#dependencies" title="Link to this heading">#</a></h3>
 <p>napari-matplotlib now adheres to <a class="reference external" href="https://scientific-python.org/specs/spec-0000/">SPEC 0</a>, and has:</p>
@@ -428,10 +438,10 @@ Version 3.0 of <code class="docutils literal notranslate"><span class="pre">napa
 </ul>
 </section>
 </section>
-<section id="id2">
-<h2>2.0.1<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<section id="bug-fixes">
-<h3>Bug fixes<a class="headerlink" href="#bug-fixes" title="Link to this heading">#</a></h3>
+<section id="id3">
+<h2>2.0.1<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<section id="id4">
+<h3>Bug fixes<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Fixed using the <code class="docutils literal notranslate"><span class="pre">HistogramWidget</span></code> with layers containing multiscale data.</p></li>
 <li><p>Make sure <code class="docutils literal notranslate"><span class="pre">HistogramWidget</span></code> uses 100 bins (not 99) when floating point data is
@@ -439,8 +449,8 @@ selected.</p></li>
 </ul>
 </section>
 </section>
-<section id="id3">
-<h2>2.0.0<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<section id="id5">
+<h2>2.0.0<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
 <section id="changes-to-custom-theming">
 <h3>Changes to custom theming<a class="headerlink" href="#changes-to-custom-theming" title="Link to this heading">#</a></h3>
 <p><code class="docutils literal notranslate"><span class="pre">napari-matplotlib</span></code> now uses colours from the current napari theme to customise the
@@ -460,8 +470,8 @@ to render the selected layer in the main napari window.</p></li>
 </ul>
 </section>
 </section>
-<section id="id4">
-<h2>1.2.0<a class="headerlink" href="#id4" title="Link to this heading">#</a></h2>
+<section id="id6">
+<h2>1.2.0<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
 <section id="changes">
 <h3>Changes<a class="headerlink" href="#changes" title="Link to this heading">#</a></h3>
 <ul class="simple">
@@ -471,24 +481,24 @@ to render the selected layer in the main napari window.</p></li>
 </ul>
 </section>
 </section>
-<section id="id5">
-<h2>1.1.0<a class="headerlink" href="#id5" title="Link to this heading">#</a></h2>
+<section id="id7">
+<h2>1.1.0<a class="headerlink" href="#id7" title="Link to this heading">#</a></h2>
 <section id="additions">
 <h3>Additions<a class="headerlink" href="#additions" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Added a widget to draw a histogram of features.</p></li>
 </ul>
 </section>
-<section id="id6">
-<h3>Changes<a class="headerlink" href="#id6" title="Link to this heading">#</a></h3>
+<section id="id8">
+<h3>Changes<a class="headerlink" href="#id8" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>The slice widget is now limited to slicing along the x/y dimensions. Support
 for slicing along z has been removed for now to make the code simpler.</p></li>
 <li><p>The slice widget now uses a slider to select the slice value.</p></li>
 </ul>
 </section>
-<section id="id7">
-<h3>Bug fixes<a class="headerlink" href="#id7" title="Link to this heading">#</a></h3>
+<section id="id9">
+<h3>Bug fixes<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Fixed creating 1D slices of 2D images.</p></li>
 <li><p>Removed the limitation that only the first 99 indices could be sliced using
@@ -496,36 +506,36 @@ the slice widget.</p></li>
 </ul>
 </section>
 </section>
-<section id="id8">
-<h2>1.0.2<a class="headerlink" href="#id8" title="Link to this heading">#</a></h2>
-<section id="id9">
-<h3>Bug fixes<a class="headerlink" href="#id9" title="Link to this heading">#</a></h3>
+<section id="id10">
+<h2>1.0.2<a class="headerlink" href="#id10" title="Link to this heading">#</a></h2>
+<section id="id11">
+<h3>Bug fixes<a class="headerlink" href="#id11" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>A full dataset is no longer read into memory when using <code class="docutils literal notranslate"><span class="pre">HistogramWidget</span></code>.
 Only the current slice is loaded.</p></li>
 <li><p>Fixed compatibility with napari 0.4.18.</p></li>
 </ul>
 </section>
-<section id="id10">
-<h3>Changes<a class="headerlink" href="#id10" title="Link to this heading">#</a></h3>
+<section id="id12">
+<h3>Changes<a class="headerlink" href="#id12" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Histogram bin limits are now caclualted from the slice being histogrammed, and
 not the whole dataset. This is as a result of the above bug fix.</p></li>
 </ul>
 </section>
 </section>
-<section id="id11">
-<h2>1.0.1<a class="headerlink" href="#id11" title="Link to this heading">#</a></h2>
-<section id="id12">
-<h3>Bug fixes<a class="headerlink" href="#id12" title="Link to this heading">#</a></h3>
+<section id="id13">
+<h2>1.0.1<a class="headerlink" href="#id13" title="Link to this heading">#</a></h2>
+<section id="id14">
+<h3>Bug fixes<a class="headerlink" href="#id14" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Pinned that maximum version of <a class="reference external" href="https://napari.org/api/napari.html#module-napari" title="(in napari vdev)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">napari</span></code></a> to 0.4.17, since <code class="docutils literal notranslate"><span class="pre">napari-matplotlib</span></code>
 does not yet work with <code class="docutils literal notranslate"><span class="pre">napari</span></code> 0.4.18.</p></li>
 </ul>
 </section>
 </section>
-<section id="id13">
-<h2>1.0.0<a class="headerlink" href="#id13" title="Link to this heading">#</a></h2>
+<section id="id15">
+<h2>1.0.0<a class="headerlink" href="#id15" title="Link to this heading">#</a></h2>
 <section id="new-features">
 <h3>New features<a class="headerlink" href="#new-features" title="Link to this heading">#</a></h3>
 <ul class="simple">
@@ -544,8 +554,8 @@ for the widget to plot something.</p></li>
 for more information.</p></li>
 </ul>
 </section>
-<section id="id14">
-<h3>Changes<a class="headerlink" href="#id14" title="Link to this heading">#</a></h3>
+<section id="id16">
+<h3>Changes<a class="headerlink" href="#id16" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>The scatter widgets no longer use a LogNorm() for 2D histogram scaling.
 This is to move the widget in line with the philosophy of using Matplotlib default
@@ -560,8 +570,8 @@ funcitonality when layer selection is changed.</p></li>
 <li><p>The slice widget now only plots x-ticks at integer locations.</p></li>
 </ul>
 </section>
-<section id="id15">
-<h3>Bug fixes<a class="headerlink" href="#id15" title="Link to this heading">#</a></h3>
+<section id="id17">
+<h3>Bug fixes<a class="headerlink" href="#id17" title="Link to this heading">#</a></h3>
 <ul class="simple">
 <li><p>Importing <code class="docutils literal notranslate"><span class="pre">napari-matplotlib</span></code> no longer affects how plots are rendered in
 Jupyter notebooks.</p></li>
@@ -614,43 +624,47 @@ Jupyter notebooks.</p></li>
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">2.0.2</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dependencies">Dependencies</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">2.0.1</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">2.0.3</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#bug-fixes">Bug fixes</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2.0.0</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">2.0.2</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#dependencies">Dependencies</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">2.0.1</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">Bug fixes</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">2.0.0</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#changes-to-custom-theming">Changes to custom theming</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#other-changes">Other changes</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">1.2.0</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">1.2.0</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#changes">Changes</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">1.1.0</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">1.1.0</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#additions">Additions</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Changes</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Bug fixes</a></li>
-</ul>
-</li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">1.0.2</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Changes</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Bug fixes</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Changes</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">1.0.1</a><ul class="nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Bug fixes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">1.0.2</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Bug fixes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Changes</a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">1.0.0</a><ul class="nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">1.0.1</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">Bug fixes</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">1.0.0</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#new-features">New features</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#visual-improvements">Visual improvements</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id14">Changes</a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id15">Bug fixes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id16">Changes</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id17">Bug fixes</a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#other">Other</a></li>
 </ul>
 </li>
