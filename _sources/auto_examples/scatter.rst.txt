@@ -11,7 +11,7 @@
         :class: sphx-glr-download-link-note
 
         :ref:`Go to the end <sphx_glr_download_auto_examples_scatter.py>`
-        to download the full example code
+        to download the full example code.
 
 .. rst-class:: sphx-glr-example-title
 
@@ -21,7 +21,7 @@
 Scatter plots
 =============
 
-.. GENERATED FROM PYTHON SOURCE LINES 5-16
+.. GENERATED FROM PYTHON SOURCE LINES 5-17
 
 
 
@@ -31,20 +31,11 @@ Scatter plots
    :class: sphx-glr-single-img
 
 
-.. rst-class:: sphx-glr-script-out
-
- .. code-block:: none
-
-    Downloading file 'data/kidney.tif' from 'https://gitlab.com/scikit-image/data/-/raw/2cdc5ce89b334d28f06a58c9f0ca21aa6992a5ba/kidney-tissue-fluorescence.tif' to '/home/runner/.cache/scikit-image/0.22.0'.
 
 
-
-
-
-
-|
 
 .. code-block:: Python
+
 
     import napari
 
@@ -61,7 +52,7 @@ Scatter plots
 
 .. rst-class:: sphx-glr-timing
 
-   **Total running time of the script:** (0 minutes 8.246 seconds)
+   **Total running time of the script:** (0 minutes 4.771 seconds)
 
 
 .. _sphx_glr_download_auto_examples_scatter.py:
